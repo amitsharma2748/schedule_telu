@@ -1,0 +1,262 @@
+﻿<CompanyConf id="289">
+
+	<DBConnection>
+	<!--  Live ServerDB Connection 
+		<Parameter name="mongoDB.host" value="172.30.0.8" />
+		<Parameter name="mongoDB.Port" value="27017" />
+		<Parameter name="MysqlDB.host" value="35.154.87.233" />
+		<Parameter name="MysqlDB.Port" value="3360" />
+		<Parameter name="MysqlDB.user" value="root" />
+		<Parameter name="MysqlDB.Password" value="ldgki9yc$`^|hk0A" />
+		<Parameter name="MysqlDB.DB.webroster" value="smart_rota" />
+		<Parameter name="MysqlDB.DB.Cabs" value="smartcabs" />
+		<Parameter name="MysqlDB.Driver" value="com.mysql.jdbc.Driver" />
+		<Parameter name="NetMagic.MysqlDB.host" value="180.179.182.2" /> -->
+ 
+	<!--   Local ServerDB Connection -->
+		<Parameter name="mongoDB.host" value="192.168.1.17" />
+		<Parameter name="mongoDB.Port" value="27017" />
+		<Parameter name="MysqlDB.host" value="192.168.1.64" />
+		<Parameter name="MysqlDB.Port" value="3360" />
+		<Parameter name="MysqlDB.user" value="root" />
+		<Parameter name="MysqlDB.Password" value="Smart@123" />
+		<Parameter name="MysqlDB.DB.webroster" value="smart_rota" />
+		<Parameter name="MysqlDB.DB.Cabs" value="smartcabs" />
+		<Parameter name="MysqlDB.Driver" value="com.mysql.jdbc.Driver" /> 
+
+
+	</DBConnection>
+ <!--
+    How to Define Weekdays in Configuration.
+    This has been done to avoid Typo Errors.
+    Sunday=0
+    Monday=1
+    Tuesday=2
+    Wednesday=3
+    Thursday=4
+    Friday=5
+    Saturday=6
+    -->
+	<ParametersValues>
+		<Parameter name="TopBarColour" value="55379B" />
+		<Parameter name="TopBarFont" value="ffffff" />
+		<!-- SYSTEM SETUP AND CONFIG -->
+		<Parameter name="TptTeamLoginIP" value="123.234.222.83,192.168.2.*" />
+		<Parameter name="HelpdeskEmail" value="tmsnew@smart24x7.com" />
+		<Parameter name="HelpdeskSender" value="MK-TPT"/>
+		<Parameter name="HelpdeskMobile" value="9899990786" />
+		<Parameter name="TransportTeamEmail" value="tmsnew@smart24x7.com" />
+		<Parameter name="BCPmail" value="tmsnew@smart24x7.com" />​
+		<Parameter name="OfficialDomains" value="mattsenkumar.com" />
+		<Parameter name="LogoURL" value="https://mattsenkumar.smart24x7.com/images/smart_logo.png"/>
+		<Parameter name="WebrosterTPTSPOC" value="webroster@smart24x7.com" /> <!-- Webroster Reminder Will go from this ID -->
+		<Parameter name="StopPendingRequestCount" value="3" />
+		<Parameter name="Redirect400" value="http://www.smart24x7.com/400.html" />
+		<Parameter name="Redirect500" value="http://www.smart24x7.com/500.html" />
+		<Parameter name="DisclaimerURL" value="http://home.bt.com/pages/navigation/privacypolicy.html" />
+		<Parameter name="TPTPoliciesURL" value="http://home.bt.com/pages/navigation/privacypolicy.html" />
+		<Parameter name="MailSenderName" value="MK-TPT" />
+		<Parameter name="MailSender" value="webroster@smart24x7.in" />
+		<Parameter name="MailSenderPassword" value="Web@123RR" />
+		<Parameter name="MailSenderUrl" value="172.30.0.47" />
+		<Parameter name="AddressUserAs" value="User" />
+		<Parameter name="AddressSPOCAs" value="Transport Spoc" />
+		<Parameter name="TPTSignature" value="Team Mattsen Kumar Transport" />
+		<Parameter name="WebrosterURL" value="mattsenkumar.smart24x7.com" />
+		<Parameter name="TechQuery" value="info@smart24x7.com"/>
+		<Parameter name="UploadType" value="No"/>
+		<Parameter name="ExtensionOfRotaTime" value="30,60,90" />
+		<Parameter name="SchedulesMailTo" value="Email,HelpdeskEmail"/>
+		
+		<!-- SUPPORT ESCALATION -->
+		<Parameter name="Escalation" value="Yes" />
+		<Parameter name="EscalationLevel1" value="4h" />
+		<Parameter name="EscalationLevel1Email" value="tmsnew@smart24x7.com" />
+		<Parameter name="EscalationLevel1SMS" value="9811214944" />
+		<Parameter name="EscalationLevel2" value="8h" />
+		<Parameter name="EscalationLevel2Email" value="tmsnew@smart24x7.com" />
+		<Parameter name="EscalationLevel2SMS" value="9811214944" />
+		<Parameter name="EscalationLevel3" value="12h" />
+		<Parameter name="EscalationLevel3Email" value="tmsnew@smart24x7.com" />
+		<Parameter name="EscalationLevel3SMS" value="9811214944" />
+		<Parameter name="EscalationMailSend" value="Yes" />
+		<Parameter name="EscalationMessageSend" value="Yes" />
+		
+		<!-- WebRoster Settings -->
+		<Parameter name="RotaCutOffDay" value="4" />
+		<Parameter name="RotaCutOffDays" value="10|25" />
+		<Parameter name="RotaCutoffTime" value="18:00" /> <!--  First Cutoff Time -->
+		<Parameter name="RotaCutoffGraceDay" value="5" />
+		<Parameter name="RotaCutoffGraceTime" value="12:00" /> <!-- Grace Time -->
+		<Parameter name="RotaAutoMail" value="1" />
+		<Parameter name="RotaFirstMail" value="2" />
+		<Parameter name="RotaFirstMailTime" value="12:00" />
+		<Parameter name="RotaSecondMail" value="09:00" />
+		<Parameter name="RotaFinalMail" value="13:00" />
+		<Parameter name="RotaDisplayDropScreen" value="Yes" />
+		<Parameter name="RotaSplUpdateWindow" value="Yes" />
+		<Parameter name="SentReminderForRota" value="No" />
+		<Parameter name="RosterReminderDate" value="1" />
+		<Parameter name="SingleTimeCancellation" value="No" />
+		<Parameter name="simranjitMail" value="tmsnew@smart24x7.com" />
+		<Parameter name="shubhamMail" value="tmsnew@smart24x7.com" />
+		<Parameter name="rohitMail" value="tmsnew@smart24x7.com" />
+		<Parameter name="AllIconsDisable" value="No" />
+		<Parameter name="ReplicateWeeks" value="No"/>
+		<Parameter name="StopCancellation" value="No" />
+		<Parameter name="ShowAdvance" value="Yes" />
+		<Parameter name="RouteType" value="No" />
+		
+		
+		<!-- Fix cut off time settings Schedule Setting -->
+		<Parameter name="ShowDay" value="Yes" />
+		<Parameter name="ShowMonth" value="Yes" />
+		<Parameter name="ShowWeek" value="Yes" />
+		<Parameter name="ShowDots" value="No"/>
+		<Parameter name="ShowCheckBox" value="Yes"/>
+		<Parameter name="FixTimeCutOffPick" value="No"/>
+		<Parameter name="ShiftCutOffPick" value="Yes"/>
+		<Parameter name="FixTimeCutOffDrop" value="No"/>
+		<Parameter name="ShiftCutOffDrop" value="Yes"/>
+		<Parameter name="FixedTimeCutOffPick" value="15"/>
+		<Parameter name="FixedTimeCutOffDrop" value="15"/>
+		<Parameter name="AdhocShiftAllowed" value="No"/>
+		<Parameter name="NormalShiftAllowed" value="Yes"/>
+		<Parameter name="ScheduleCutOfftime" value="00" />
+		<Parameter name="BulkScheduleUpload" value="Yes" />
+		<Parameter name="MaxDaysForBulkScheduleCutOff" value="30" />
+		<Parameter name="MultiCancelAllowed" value="Yes" />
+		<Parameter name="PickCancellationSetting" value="Shift" />
+		<Parameter name="DropCancellationSetting" value="Shift" />
+		
+
+		<!-- Schedule Cutoffs -->
+		<Parameter name="NoShowCutOffDefault" value="2h" />
+		<Parameter name="NoShowCutOffCate1" value="2h" />
+		<Parameter name="NoShowCutOffCate2" value="2h" />
+		<Parameter name="NoShowCutOffCate3" value="2h" />
+				
+<!-- Schedule & No-Show Cutoffs Pick & Drop  -->
+<!-- Shift Change Cutoff time-->
+<Parameter name="SchedulePickCutOfftimeCat1" value="10h" />
+<Parameter name="SchedulePickCutOfftimeCat2" value="10h" />
+<Parameter name="SchedulePickCutOfftimeCat3" value="10h" />
+<Parameter name="ScheduleDropCutOfftimeCat1" value="8h" />
+<Parameter name="ScheduleDropCutOfftimeCat2" value="8h" />
+<Parameter name="ScheduleDropCutOfftimeCat3" value="8h" />
+<!-- Cancellation Cutoff time-->
+<Parameter name="NoShowPickCutOffCate1" value="6h" />
+<Parameter name="NoShowPickCutOffCate2" value="6h" />
+<Parameter name="NoShowPickCutOffCate3" value="6h" />
+<Parameter name="NoShowDropCutOffCate1" value="6h" />
+<Parameter name="NoShowDropCutOffCate2" value="6h" />
+<Parameter name="NoShowDropCutOffCate3" value="6h" />
+
+
+		
+		<!-- PickTime -->
+		<Parameter name="PickTimeVisible" value="No" />
+		<Parameter name="PickTimeCutOff" value="12h" />
+		<Parameter name="PicktimeTAT" value="2h" />
+		<Parameter name="PickTimeApprovalRequired" value="Yes" />
+		<Parameter name="PickTimeApprovaltime" value="12h" />
+		
+		<!-- DropTime -->
+		<Parameter name="DropTimeVisible" value="No" />
+		<Parameter name="DropTimeCutOff" value="12h" />
+		<Parameter name="DropTimeTAT" value="2h" />
+		<Parameter name="DropTimeApprovalRequired" value="Yes" />
+		<Parameter name="DropTimeApprovaltime" value="12h" />
+		
+		<!-- Adhoc -->
+		<Parameter name="AdhocVisible" value="Yes" />
+		<Parameter name="AdhocShift" value="1855" />
+		<Parameter name="AdhocTimeCutOff" value="24h" />
+		<Parameter name="AdhocTATDefault" value="2h" />
+		<Parameter name="AdhocTATDefaultCat1" value="2h" />
+		<Parameter name="AdhocTATDefaultCat2" value="2h" />
+		<Parameter name="AdhocTATDefaultCat3" value="2h" />
+		<Parameter name="AdhocApprovalRequired" value="Yes" />
+		<Parameter name="AdhocApprovalTime" value="24h" />
+		<Parameter name="AdhocServiceCity" value="DEL_Delhi,DEL_Noida"/>
+		<Parameter name="AdhocOfficeList" value="DEL_Delhi Office,BOM_Bombay Office" />
+		<Parameter name="AdhocAllowedPayments" value="CC,CP" /> <!-- CC=Credit card, CP=Company paid-->
+		
+		<!-- Change Shift Time -->
+		<Parameter name="ChangeinShiftVisible" value="No" />
+		<Parameter name="ChangeinShiftCutoff" value="24h" />
+		<Parameter name="ChangeinShiftTAT" value="4h" />
+		<Parameter name="ChangeinShiftApprovalRequired" value="Yes" />
+		<Parameter name="ChangeinShiftApprovalTime" value="24h" />
+		
+		<!-- Change In Contact Phone -->
+		<Parameter name="ChangeinContactVisible" value="Yes" />
+		<Parameter name="ChangeinContactCutoff" value="4h" />
+		<Parameter name="ChangeinContactTAT" value="4h" />
+		<Parameter name="ChangeinContactApprovalRequired" value="No" />
+		<Parameter name="ChangeinContactApprovalTime" value="24h" />
+		
+		<!-- Change in Medical Emergency -->
+		<Parameter name="MedicalEmergencyVisible" value="Yes" />
+		<Parameter name="MedicalEmergencyCutoff" value="30m" />
+		<Parameter name="MedicalEmergencyTAT" value="2h" />
+		<Parameter name="MedicalEmergencyApprovalRequired" value="Yes" />
+		<Parameter name="MedicalEmergencyApprovalTime" value="24h" />
+		<Parameter name="CabTypeAmbulance" value="No" />
+		<Parameter name="DropRequireOther" value="No" />
+		
+		<!-- Change in Address -->
+		<Parameter name="ChangeinAddressVisible" value="Yes" /><!--Chnage to Issue In Route-->
+		<Parameter name="ChangeinAddressCutoffDay" value="4" />
+		<Parameter name="ChangeinAddressTAT" value="7d" />
+		<Parameter name="ChangeinAddressApprovalRequired" value="Yes" />
+		<Parameter name="ChangeinAddressApprovalTime" value="24h" />
+		<Parameter name="ReasonForChange" value="No" />
+		
+		<!-- Change of Route -->
+		<Parameter name="ChangeofRouteVisible" value="No" />
+		<Parameter name="ChangeofRouteCutoff" value="24h" />
+		<Parameter name="ChangeofRouteTAT" value="24h" />
+		<Parameter name="ChangeofRouteApprovalRequired" value="No" />
+		
+		<!-- Issue in Route -->
+		<Parameter name="ChangeofIssueRouteVisible" value="Yes" />
+		<Parameter name="ChangeofIssueRouteCutoff" value="4h" />
+		<Parameter name="ChangeofIssueRouteTAT" value="4h" />
+		<Parameter name="ChangeofIssueRouteApprovalRequired" value="No" />
+		
+		<!-- Cab Driver Feedback -->
+		<Parameter name="CabDrvFeedbackVisible" value="Yes" />
+		<Parameter name="CabDrvFeedbackCutoff" value="0h" />
+		<Parameter name="CabDrvFeedbackTAT" value="2h" />
+		<Parameter name="CabDrvFeedbackApprovalRequired" value="No" />
+		
+		<!-- Transport Service Feedback -->
+		<Parameter name="TPTServiceFeedbackVisible" value="No" />
+		<Parameter name="TPTServiceFeedbackCutoff" value="0h" />
+		<Parameter name="TPTServiceFeedbackTAT" value="2h" />
+		<Parameter name="TPTServiceFeedbackApprovalRequired" value="No" />
+		
+		<!-- Guard Service Feedback -->
+		<Parameter name="GuardServiceFeedbackVisible" value="Yes" />
+		<Parameter name="GuardServiceFeedbackCutoff" value="0h" />
+		<Parameter name="GuardServiceFeedbackTAT" value="2h" />
+		<Parameter name="GuardServiceFeedbackApprovalRequired" value="No" />
+		
+		<!-- TMS Service Feedback -->
+		<Parameter name="TMSServiceFeedbackVisible" value="Yes" />
+		<Parameter name="TMSServiceFeedbackCutoff" value="0h" />
+		<Parameter name="TMSServiceFeedbackTAT" value="2h" />
+		<Parameter name="TMSServiceFeedbackApprovalRequired" value="No" />
+		<Parameter name="SendExceptionMailPermission" value="No	" />
+        <Parameter name="SendExceptionMailTo" value="amar@smartgeeks.in" />
+		
+		<!-- SMS Credential -->
+		<Parameter name="CorporateName" value="bt_dlf14" />
+		<Parameter name="CorporateId" value="BTITPT" />
+		<Parameter name="CorporateSMSURl" value="https://smart.mobiglitz.com/SendSMS/sendmsg.php?uname=bt_dlf14&amp;pass=o!5Gu!3R&amp;send=BTITPT&amp;dest=#MOBILENO#&amp;msg=#SMS_TEXT#" />
+	</ParametersValues>
+			  
+
+
+</CompanyConf>

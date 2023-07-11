@@ -1,0 +1,11 @@
+.modal-schedule{
+    /* width:50%;
+    margin: auto;
+    background-color: #ffff; */
+}
+.modal-schedule-container{
+    width:50%;
+    margin: auto;
+    background-color: #ffff;
+    border: '2px solid #fff',
+}

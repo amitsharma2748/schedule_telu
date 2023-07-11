@@ -1,0 +1,33 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "server": "nodemon backend/app.js",
+    "client": "npm start --prefix client",
+    "test": "jest",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "react-scripts build"
+  },
+  "author": "Ariba",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "*",
+    "jest": "^29.5.0",
+    "nodemon": "*"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+     
+    "cors": "*",
+    "express": "*",
+    "mongodb": "^2.2.19",
+    "mongoose": "*",
+    "mqtt": "*",
+    "mysql": "*",
+    "redis": "*",
+    "xml2js": "*"
+  }
+}

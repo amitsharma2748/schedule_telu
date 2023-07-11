@@ -1,0 +1,17 @@
+FROM alpine
+# Building alpine to run node apps.
+RUN apk update ; apk add npm; apk add --no-cache busybox-extras; apk add tzdata; ln -snf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && echo "Asia/Kolkata" > /etc/timezone
+
+#ENV TZ="Asia/Kolkata"
+
+COPY . /code/
+# COPY ./run.sh /code/
+WORKDIR /code/
+
+RUN npm install ; 
+RUN cd /code/client/ ; npm install ; npm run build ; 
+RUN chmod +x /code/run.sh ; ln -snf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && echo "Asia/Kolkata" > /etc/timezone ;
+# RUN  echo "172.30.0.8 xavient.smart24x7.com" >> /etc/hosts
+ENTRYPOINT ["./run.sh"]
+
+#Added by CP

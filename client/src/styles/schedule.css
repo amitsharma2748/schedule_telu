@@ -1,0 +1,65 @@
+.daywise-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.daywise-body {
+  padding: 15px;
+  font-size: small;
+}
+.daywise-body-card-content-1 span{
+  margin-left: 10px;
+}
+.daywise-body-card-content-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.daywise-body-card-content-2 div {
+  padding: 10px;
+}
+.daywise-body-card-content-3 {
+  display: flex;
+  justify-content: space-around;
+}
+.daywise-body-card-content-3 div {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .daywise-body {
+    padding: 0px ;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .daywise-body-card-content-2 {
+    flex-direction: column;
+  }
+  .daywise-body-card-content-3{
+    flex-direction: column;
+  }
+  .daywise-body-card-content-3 div {
+    padding: 0px ;
+    height: 25px;
+    justify-content: center;
+  }
+  .daywise-body-card-content-2 div {
+    padding: 0px ;
+    justify-content: center;
+  }
+  .card-container {
+    height: 600px;
+    overflow-y: scroll;
+  }
+  .card-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  .card-container::-webkit-scrollbar-track {
+    background-color: black;
+  }
+
+  .card-container::-webkit-scrollbar-thumb {
+    background: #8f8c8c;
+    border-radius: 25px;
+  }
+}
