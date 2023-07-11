@@ -1,11 +1,29 @@
-.modal-schedule{
-    /* width:50%;
-    margin: auto;
-    background-color: #ffff; */
+.modal-schedule-container {
+  width: 65%;
+  margin: auto;
+  background-color: #ffff;
+  border: "2px solid #fff";
 }
-.modal-schedule-container{
-    width:50%;
-    margin: auto;
-    background-color: #ffff;
-    border: '2px solid #fff',
+.modal-dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.modal-dropdown-container div {
+  display: flex;
+  justify-content: center;
+}
+/* .modal-dropdown-button-container {
+  margin: auto;
+} */
+@media only screen and (max-width: 1200px) {
+  .modal-schedule-container {
+    width: 40%;
+  }
+  .modal-dropdown-container {
+    flex-direction: column;
+  }
+  .modal-dropdown-container div {
+    margin-top: 10px;
+  }
 }
