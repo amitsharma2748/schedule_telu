@@ -1,11 +1,13 @@
 import {
   Box,
   Button,
+  Grid,
   InputLabel,
   MenuItem,
   Modal,
   Select,
   TextField,
+  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import "../../styles/modalSchedule.css";
@@ -19,16 +21,16 @@ const ModalSchedule = (props) => {
   });
   let newData = {};
   const handleClose = () => {
-    close(false);
+    close();
   };
   const style = {
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 400,
+     
+    height:"100%",
+    width: "100%",
+    
     bgcolor: "background.paper",
-    border: "2px solid #000",
+    borderRadius:2,
     boxShadow: 24,
     pt: 2,
     px: 4,
@@ -54,12 +56,17 @@ const ModalSchedule = (props) => {
       <Box
         component={"div"}
         className="modal-schedule-container"
-        sx={{ ...style, width: "45%" }}
+        sx={{ ...style }}
       >
         <div>
-          <h1>Edit</h1>
-          <div className="modal-dropdown-container">
-            <div>
+          
+        </div>
+        <Grid container spacing={2} textAlign={"center"}>
+          <Grid item sm={12}   >
+          <Typography variant="h6">Edit</Typography>
+          </Grid>
+          
+          <Grid item md={12} lg={6}  >
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -67,16 +74,17 @@ const ModalSchedule = (props) => {
                 value={data?.route}
                 label="Route"
                 onChange={(e) => handleChange(e)}
+                fullWidth
               >
                 <MenuItem value=" " disabled>
-                  ---select the schedule -----
+                  ---select the schedule ---
                 </MenuItem>
                 <MenuItem value={10}>Ten</MenuItem>
                 <MenuItem value={20}>Twenty</MenuItem>
                 <MenuItem value={30}>Thirty</MenuItem>
               </Select>
-            </div>
-            <div>
+              </Grid>
+              <Grid item md={12} lg={6}>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -84,6 +92,7 @@ const ModalSchedule = (props) => {
                 value={data?.city}
                 label="city"
                 onChange={handleChange}
+                fullWidth
               >
                 <MenuItem value=" " disabled>
                   ---select the city -----
@@ -92,10 +101,18 @@ const ModalSchedule = (props) => {
                 <MenuItem value={20}>Twenty</MenuItem>
                 <MenuItem value={30}>Thirty</MenuItem>
               </Select>
-            </div>
-          </div>
-          <div className="modal-dropdown-container">
-            <div>
+              </Grid>
+              <Grid item md={12} lg={6}>
+           <TextField
+                name="specific-request"
+                type="text"
+                placeholder="Specific Request"
+                value={data?.specification}
+                onChange={(e) => handleChange(e)}
+                fullWidth
+              />
+           </Grid>
+              <Grid item md={12} lg={6}>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -103,6 +120,7 @@ const ModalSchedule = (props) => {
                 value={data?.facility}
                 label="facility"
                 onChange={(e) => handleChange(e)}
+                fullWidth
               >
                 <MenuItem value=" " disabled>
                   ---select the facility -----
@@ -111,23 +129,17 @@ const ModalSchedule = (props) => {
                 <MenuItem value={20}>Twenty</MenuItem>
                 <MenuItem value={30}>Thirty</MenuItem>
               </Select>
-            </div>
-            <div className="modal-dropdown-button-container">
-              <TextField
-                name="specification"
-                type="text"
-                placeholder="Specification"
-                value={data?.specification}
-                onChange={(e) => handleChange(e)}
-              />
-            </div>
-          </div>
-          <div>
-            <Button color="success" variant="contained">
+           </Grid>
+      
+            
+           <Grid item sm={12}  >
+           <Button color="success" variant="contained" size="large">
               Sumit
             </Button>
-          </div>
-        </div>
+           </Grid>
+           
+          
+        </Grid>
       </Box>
     </Modal>
   );

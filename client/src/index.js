@@ -6,7 +6,8 @@ import { Router } from "react-router-dom";
 import Root from "./Root";
 import history from "./history";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 if (process.env.NODE_ENV === "production") {
 	disableReactDevTools();
 }

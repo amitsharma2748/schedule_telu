@@ -23,7 +23,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography component={"div"}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -54,7 +54,7 @@ const HomePage = () => {
     setValue(index);
   };
   return (
-    <Box component={"div"} sx={{ bgcolor: 'background.paper', width: "90%",margin:"auto" }}>
+    <Box component={"div"}  sx={{ bgcolor: 'background.paper', width: "100%",margin:"auto" }}>
     <AppBar position="static" sx={{backgroundColor:"green"}}>
       <Tabs
         value={value}
@@ -75,8 +75,11 @@ const HomePage = () => {
       index={value}
       onChangeIndex={handleChangeIndex}
     >
-      <TabPanel value={value} index={0} dir={theme.direction}>
-        <DayWise/>
+      <TabPanel value={value} index={0} dir={theme.direction}  >
+         
+<DayWise/>
+         
+        
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
         <MultipleDays/>

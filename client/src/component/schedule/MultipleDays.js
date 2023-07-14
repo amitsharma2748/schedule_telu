@@ -51,7 +51,7 @@ export default function MultipleDays() {
     <Box
     component={"div"}
     
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224,alignItems:"center" }}
+      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224,width:"80%",alignItems:"center" ,justifyContent:"space-between"}}
     >
       <Tabs
         orientation="vertical"

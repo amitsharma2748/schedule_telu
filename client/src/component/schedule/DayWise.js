@@ -8,6 +8,7 @@ import {
   AccordionSummary,
   Button,
   Card,
+  Grid,
   TextField,
   Typography,
 } from "@mui/material";
@@ -34,10 +35,24 @@ const DayWise = () => {
         </div>
       </div>
       <div className="card-container">
+        <Grid container spacing={2}>
+        <Grid item sm={6}> 
         <DayWiseCard editable={false} />
-        <DayWiseCard editable={true}/>
+        </Grid>
+        <Grid item sm={6}> 
+        <DayWiseCard editable={false} />
+        </Grid>
+        <Grid item sm={6}> 
+        <DayWiseCard editable={false} />
+        </Grid>
+        <Grid item sm={6}> 
+        <DayWiseCard editable={false} />
+        </Grid>
+        </Grid>
+       
+        {/* <DayWiseCard editable={true}/>
         <DayWiseCard  editable={false}/>
-        <DayWiseCard  editable={false}/>
+        <DayWiseCard  editable={false}/> */}
     
       </div>
     </div>

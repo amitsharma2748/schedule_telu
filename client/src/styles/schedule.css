@@ -1,52 +1,50 @@
+.card-body{
+  background-color:#A8A196;
+  color:#ffff !important;    
+  
+}
+.background-light-green{
+  background-color: #A0C49D;
+  color: #ffff;
+}
+.background-light-red{
+  background-color: #F24C3D;
+  color: #ffff;
+}
+.card-header .header-icon{
+background-color: #7D7463;
+padding: 0 3px;
+border-radius: 10px;
+border: 1px solid black;
+}
 .daywise-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.daywise-body {
-  padding: 15px;
-  font-size: small;
-}
-.daywise-body-card-content-1 span{
-  margin-left: 10px;
-}
-.daywise-body-card-content-2 {
+ .card-container .card-header{
   display: flex;
   justify-content: space-between;
-}
-.daywise-body-card-content-2 div {
-  padding: 10px;
-}
-.daywise-body-card-content-3 {
+  padding:10px 15px;
+ }
+ .card-container .card-body-login ,.card-body-logout{
   display: flex;
-  justify-content: space-around;
-}
-.daywise-body-card-content-3 div {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  height: auto;
+  
 }
+.card-body-login div,.card-body-logout div{
+   padding:0 15px;
+
+}
+.card-body-login div p ,.card-body-logout div p{
+  font-size: 25px;  
+  margin :0;
+}
+ 
 @media only screen and (max-width: 768px) {
-  .daywise-body {
-    padding: 0px ;
-    font-size: 1rem;
-    text-align: center;
-  }
-  .daywise-body-card-content-2 {
-    flex-direction: column;
-  }
-  .daywise-body-card-content-3{
-    flex-direction: column;
-  }
-  .daywise-body-card-content-3 div {
-    padding: 0px ;
-    height: 25px;
-    justify-content: center;
-  }
-  .daywise-body-card-content-2 div {
-    padding: 0px ;
-    justify-content: center;
-  }
+
+ 
   .card-container {
     height: 600px;
     overflow-y: scroll;
